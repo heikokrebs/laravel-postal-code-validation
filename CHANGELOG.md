@@ -1,29 +1,27 @@
 # Changelog
 
 ## [v3.0.0](https://github.com/axlon/laravel-postal-code-validation/tree/v3.0.0) (TBD)
-- Dropped support for Laravel 5.1, 5.2 and 5.3
-- Renamed `:countries` error placeholder to `:codes`
-- Added `:fields` error replacer (`postal_code_for` only)
-- Changed rules to throw an exception when no parameters are passed (similar to framework rules)
+- Dropped support for Laravel 5.1, 5.2 and 5.3 ([b6e2b2c](https://github.com/axlon/laravel-postal-code-validation/commit/b6e2b2c7f3c18dbe32169640986170f7521ef2de))
+- Renamed `:countries` error placeholder to `:codes` ([36f0fdf](https://github.com/axlon/laravel-postal-code-validation/commit/36f0fdfcde63e62780d57a0db490556bfe659862))
+- Added `:fields` error replacer (`postal_code_for` only) ([36f0fdf](https://github.com/axlon/laravel-postal-code-validation/commit/36f0fdfcde63e62780d57a0db490556bfe659862))
+- Changed rules to throw an exception when no parameters are passed (similar to framework rules) ([3ca36a6](https://github.com/axlon/laravel-postal-code-validation/commit/3ca36a67790cfd75654d344249fe44ad97ef6543))
 
 ## [v2.1.0](https://github.com/axlon/laravel-postal-code-validation/tree/v2.1.0) (2020-03-04)
-- Added support for Laravel 7
+- Added support for Laravel 7 ([#16](https://github.com/axlon/laravel-postal-code-validation/pull/16))
 
 ## [v2.0.2](https://github.com/axlon/laravel-postal-code-validation/tree/v2.0.2) (2020-03-03)
-- Fixed validation of countries with complex patterns
-[#13](https://github.com/axlon/laravel-postal-code-validation/issues/13)
-- Fixed rules not being loaded if the validator was resolved before the service provider was called
-- Fixed format generator (dev-only)
+- Fixed validation of countries with complex patterns ([#13](https://github.com/axlon/laravel-postal-code-validation/issues/13))
+- Fixed rules not being loaded if the validator was resolved before the service provider was called ([5f154ae](https://github.com/axlon/laravel-postal-code-validation/commit/5f154aeda9a70657c132e82179fcef2ebf3f4bc8))
+- Fixed format generator (dev-only) ([9845268](https://github.com/axlon/laravel-postal-code-validation/commit/9845268b1669489c8088e6f4285dff9980e010f5))
 
 ## [v2.0.1](https://github.com/axlon/laravel-postal-code-validation/tree/v2.0.1) (2019-09-07)
 - Added support for Laravel 6
 
 ## [v2.0.0](https://github.com/axlon/laravel-postal-code-validation/tree/v2.0.0) (2019-07-06)
-- Updated `postal_code` rule, which longer accepts references to request parameters as arguments (**breaking change**)
-- Updated fluent API methods (**breaking change**)
-- Removed `:formats` error message placeholder (**breaking change**)
+- Updated `postal_code` rule, which longer accepts references to request parameters as arguments
+- Updated fluent API methods
+- Removed `:formats` error message placeholder
 - Replaced the validation engine with an internal engine based on Google's Address Data Service
-(**potentially breaking change**)
 - Added `postal_code_for` rule, which accepts references to request parameters as arguments
 - Added `:examples` error message placeholder
 - Added support for referencing request parameters inside an array (for example `addresses.*.country`)
